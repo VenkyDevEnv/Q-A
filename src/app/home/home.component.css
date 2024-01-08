@@ -1,0 +1,32 @@
+.logo {
+  width: 100px;
+  height: 80px;
+  padding: 0px;
+}
+
+.logoName {
+  border: none;
+  color: #ffff;
+  background: #f58142;
+  padding: 5px 5px;
+  margin-left: 5px;
+}
+
+.rightFields {
+  display: flex;
+  justify-content: right;
+  margin-right: 5px;
+}
+
+.searchInput {
+  width: 20%;
+  margin-right: 5px;
+}
+
+.searchButton {
+  border-color: #f58142;
+}
+.searchButton:hover {
+  cursor: pointer;
+  background-color: #f58142;
+}
