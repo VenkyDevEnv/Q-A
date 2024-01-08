@@ -29,4 +29,5 @@
 .searchButton:hover {
   cursor: pointer;
   background-color: #f58142;
+  color: #ffff;
 }
