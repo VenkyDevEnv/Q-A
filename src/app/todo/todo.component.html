@@ -1,0 +1,38 @@
+<div class="body">
+  <div class="container">
+    <h2>todo list</h2>
+    <div class="tasks">
+      <form class="myForm" [formGroup]="myMessage">
+        <input
+          formControlName="msg"
+          class="form-control todoInput"
+          type="text"
+          placeholder="Enter todo"
+        />
+        <button
+          (click)="onSubmit()"
+          class="btn btn-secondary"
+          style="padding: 0px 20px"
+          type="button"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="showMessage">
+    <table class="table">
+      <tr class="tableHeading">
+        <th>Todo list</th>
+        <th>Actions</th>
+      </tr>
+      <tr class="Tablebody" *ngFor="let message of storedMessages">
+        <td>{{ message }}</td>
+        <button type="button" (click)="onClickDone()" class="btn btn-danger">
+          Done
+        </button>
+      </tr>
+    </table>
+  </div>
+</div>

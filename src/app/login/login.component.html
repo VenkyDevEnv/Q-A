@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Login</h1>
+  <form [formGroup]="loginForm">
+    <label>Email</label>
+    <input formControlName="mail" type="email" />
+    <label>Password</label>
+    <input formControlName="password" type="password" />
+    <button (click)="onSubmit()" class="button" type="button">Submit</button>
+  </form>
+  <div class="list"></div>
+</div>

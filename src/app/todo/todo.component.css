@@ -1,0 +1,39 @@
+.container {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+}
+
+.myForm {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-control {
+  width: 70%;
+  margin-right: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+.showMessage {
+  margin: 20px;
+}
