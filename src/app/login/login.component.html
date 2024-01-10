@@ -1,11 +1,29 @@
 <div class="container">
-  <h1>Login</h1>
+  <h1>Login Form</h1>
   <form [formGroup]="loginForm">
     <label>Email</label>
-    <input formControlName="mail" type="email" />
+    <input
+      class="input-group mb-3"
+      style="width: 50%"
+      formControlName="mail"
+      type="email"
+    />
     <label>Password</label>
-    <input formControlName="password" type="password" />
-    <button (click)="onSubmit()" class="button" type="button">Submit</button>
+    <input
+      class="input-group mb-3"
+      style="width: 50%"
+      formControlName="password"
+      type="password"
+    />
+    <button
+      (click)="onSubmit()"
+      class="btn btn-secondary"
+      style="margin-right: 20px"
+      type="button"
+    >
+      Login
+    </button>
+    <button class="btn btn-primary" (click)="onSignUp()">SignUp</button>
   </form>
   <div class="list"></div>
 </div>

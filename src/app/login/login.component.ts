@@ -24,4 +24,8 @@ export class LoginComponent implements OnInit {
     console.log(this.loginForm.value);
     console.log('User successfully logged in');
   }
+
+  onSignUp() {
+    this.router.navigate(['signUp']);
+  }
 }
