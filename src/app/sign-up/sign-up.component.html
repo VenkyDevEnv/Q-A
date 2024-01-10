@@ -10,11 +10,16 @@
                   Sign up
                 </p>
 
-                <form class="mx-1 mx-md-4">
+                <form
+                  class="mx-1 mx-md-4"
+                  [formGroup]="myForm"
+                  (ngSubmit)="onSubmit()"
+                >
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <input
+                        formControlName="name"
                         type="text"
                         id="form3Example1c"
                         class="form-control"
@@ -29,6 +34,7 @@
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <input
+                        formControlName="mail"
                         type="email"
                         id="form3Example3c"
                         class="form-control"
@@ -43,6 +49,7 @@
                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <input
+                        formControlName="password"
                         type="password"
                         id="form3Example4c"
                         class="form-control"
@@ -57,6 +64,7 @@
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <input
+                        formControlName="repeatPassword"
                         type="password"
                         id="form3Example4cd"
                         class="form-control"
@@ -69,6 +77,7 @@
 
                   <div class="form-check d-flex justify-content-center mb-5">
                     <input
+                      formControlName="check"
                       class="form-check-input me-2"
                       type="checkbox"
                       value=""
@@ -81,7 +90,7 @@
                   </div>
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">
+                    <button type="submit" class="btn btn-primary btn-lg">
                       Register
                     </button>
                   </div>

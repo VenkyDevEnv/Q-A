@@ -21,3 +21,10 @@
     </nav>
   </div>
 </div>
+
+<div class="pipe">
+  <h1>{{ myBalance | percentage }}</h1>
+  <h1>{{ myName | uppercase }}</h1>
+  <h1>{{ myBirthday | date : "short" | uppercase }}</h1>
+  <h1>{{ myText | slice : 10 | uppercase }}</h1>
+</div>

@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TodoComponent } from './todo/todo.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { PercentagePipe } from './pipes/percentage.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     LoginComponent,
     TodoComponent,
     SignUpComponent,
+    PercentagePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
